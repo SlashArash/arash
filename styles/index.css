@@ -1,0 +1,122 @@
+/*
+Theme Name: Arash Blog
+Theme URI: http://kadkhodaei.ir/
+Description: a blog theme for kadkhodaei.ir.
+Version: 0.7
+Author: Arash Kadkhodaei Elyaderani
+*/
+@import 'tachyons/src/_normalize';
+
+@import 'tachyons/src/_borders';
+@import 'tachyons/src/_border-colors';
+@import 'tachyons/src/_display';
+@import 'tachyons/src/_flexbox';
+@import 'tachyons/src/_font-family';
+@import 'tachyons/src/_font-style';
+@import 'tachyons/src/_font-weight';
+@import 'tachyons/src/_heights';
+@import 'tachyons/src/_line-height';
+@import 'tachyons/src/_links';
+@import 'tachyons/src/_max-widths';
+@import 'tachyons/src/_widths';
+@import 'tachyons/src/_spacing';
+@import 'tachyons/src/_text-decoration';
+@import 'tachyons/src/_text-align';
+@import 'tachyons/src/_hovers';
+@import 'tachyons/src/_utilities';
+@import 'tachyons/src/_type-scale';
+@import 'tachyons/src/_skins';
+@import 'tachyons/src/_skins-pseudo';
+
+
+
+@import 'tachyons/src/_colors';
+@import 'tachyons/src/_media-queries';
+
+body {
+    font-family:Vazir,tahoma,Times,serif;
+    color:#222;
+    position:relative;
+    direction:rtl
+}
+.custom-gold {
+    color: #E3B95F;
+}
+.hover-custom-gold:hover, .hover-custom-gold:focus{
+    color: #E3B95F;   
+}
+.no-underline-hover:hover {
+    text-decoration: none;
+}
+.w100 {
+    width: 100px;
+}
+.menu {
+    list-style:none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.menu a {
+    padding:10px 20px;
+    color: #222;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #777;
+}
+.meta a {
+    color: #222;
+}
+.meta a:hover, .text a:hover, .paginate a:hover {
+    text-decoration: none;
+    color: #777;
+}
+.text a, .paginate a {
+    padding: 0 3px;
+    color: #E3B95F;
+}
+.text blockquote {
+    border-right:5px solid rgb(238,238,238);
+    padding-right:1em
+}
+.archive ul{
+    list-style: circle;
+}
+.archive a {
+    color: #222;
+}
+.archive a:hover{
+    color: #E3B95F;
+    text-decoration: none;
+}
+.fontello {
+    font-family: "fontello";
+    font-weight: normal;
+    font-style: normal;
+}
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-github:before { content: '\f113'; } /* '' */
+.icon-facebook-official:before { content: '\f230'; } /* '' */
+.icon-telegram:before { content: '\f2c6'; } /* '' */
+@font-face {
+  font-family: 'fontello';
+  src: url('./fonts/fontello.eot?42030560');
+  src: url('./fonts/fontello.eot?42030560#iefix') format('embedded-opentype'),
+       url('./fonts/fontello.woff2?42030560') format('woff2'),
+       url('./fonts/fontello.woff?42030560') format('woff'),
+       url('./fonts/fontello.ttf?42030560') format('truetype'),
+       url('./fonts/fontello.svg?42030560#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family:"Vazir";
+    font-style:normal;
+    font-weight:normal;
+    src:url("fonts/Vazir.eot?#iefix") format("embedded-opentype"),url("fonts/Vazir.woff") format("woff"),url("fonts/Vazir.ttf") format("truetype")
+}

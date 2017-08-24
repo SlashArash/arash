@@ -1,0 +1,21 @@
+{
+  "name": "arash",
+  "version": "1.0.0",
+  "description": "personal theme for kadkhodaei.ir",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss styles/index.css -o style.css",
+    "dev": "postcss styles/index.css -o style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
+    "tachyons": "^4.8.1"
+  },
+  "dependencies": {}
+}
