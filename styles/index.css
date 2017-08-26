@@ -2,7 +2,7 @@
 Theme Name: Arash Blog
 Theme URI: http://kadkhodaei.ir/
 Description: a blog theme for kadkhodaei.ir.
-Version: 0.7
+Version: 0.8
 Author: Arash Kadkhodaei Elyaderani
 */
 @import 'tachyons/src/_normalize';
@@ -101,7 +101,7 @@ body {
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-github:before { content: '\f113'; } /* '' */
-.icon-facebook-official:before { content: '\f230'; } /* '' */
+.icon-facebook:before { content: '\f230'; } /* '' */
 .icon-telegram:before { content: '\f2c6'; } /* '' */
 @font-face {
   font-family: 'fontello';

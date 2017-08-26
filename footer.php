@@ -1,21 +1,14 @@
 		<footer class="bt b--black-20 pv4">
 			<div class="tc f3">
-				<a class="link black-80 hover-custom-gold mh2" href="https://github.com/SlashArash/">
-					<i class="fontello icon-github dib"></i>
-				</a>
-				<a class="link black-80 hover-custom-gold mh2" href="https://plus.google.com/u/0/+ArashKadkhodaeiPlus">
-					<i class="fontello icon-gplus dib"></i>
-				</a>
-				<a class="link black-80 hover-custom-gold mh2" href="https://twitter.com/slasharash">
-					<i class="fontello icon-twitter dib"></i>
-				</a>
-				<a class="link black-80 hover-custom-gold mh2" href="https://www.facebook.com/arash.kadkhodaei">
-					<i class="fontello icon-facebook-official dib"></i>
-				</a>
-				<a class="link black-80 hover-custom-gold mh2" href="https://www.linkedin.com/in/kadkhodaei/">
-					<i class="fontello icon-linkedin dib"></i>
-				</a>
-				<p class="f6 black-30 mt4">نگارگری با ♥ توسط آرش کدخدائی الیادرانی (@slasharash)</p>
+				<?php
+                $social_urls = get_option("sa_social_urls");
+				foreach ($social_urls as $key => $val) {
+                    if (!empty($val)) {
+                        echo "<a href='$val' class=\"link black-80 hover-custom-gold mh2\"><i class=\"fontello icon-$key dib\"></i></a>";
+                    }
+				}
+				?>
+				<p class="f6 black-30 mt4"><?php echo get_option("sa_copyrights") ?></p>
 			</div>
 		</footer>
 	</div>
