@@ -26,7 +26,7 @@
 					</article>
 				<?php endwhile; ?>
 			<?php else : ?>
-				<h2><?php _e('پیدا نشد'); ?></h2>
+				<h2><?php _e('Not Found', 'arash'); ?></h2>
 			<?php endif ?>
 		</main>
 <?php get_footer() ?>

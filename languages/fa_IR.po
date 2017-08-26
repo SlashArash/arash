@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Arash theme\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2017-08-26 22:07+0430\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Arash Kadkhodaei <slasharash@protonmail.com>\n"
+"Language-Team: SlashArash <slasharash@protonmail.com>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: functions.php:27
+msgid "Theme Options"
+msgstr "گزینه‌های قالب"
+
+#: functions.php:28 functions.php:43
+msgid "Arash Theme Options"
+msgstr "گزینه‌های قالب آرش"
+
+#: functions.php:52
+msgid "Created by"
+msgstr "ساخته شده توسط"
+
+#: functions.php:66
+msgid "Footer information"
+msgstr "اطلاعات فوتر"
+
+#: functions.php:77
+msgid "Facebook Profile Url:"
+msgstr "لینک حساب فیسبوک:"
+
+#: functions.php:78
+msgid "Twitter Profile Url:"
+msgstr "لینک حساب تویتر:"
+
+#: functions.php:79
+msgid "Google Plus Profile Url:"
+msgstr "لینک حساب گوگل پلاس:"
+
+#: functions.php:80
+msgid "LinkedIn Profile Url:"
+msgstr "لینک حساب لینکداین:"
+
+#: functions.php:81
+msgid "Instagram Profile Url:"
+msgstr "لینک حساب اینستاگرام:"
+
+#: functions.php:82
+msgid "Telegram Profile Url:"
+msgstr "لینک حساب تلگرام:"
+
+#: functions.php:83
+msgid "Github Profile Url:"
+msgstr "لینک حساب گیتهاب:"
+
+#: functions.php:84
+msgid "CopyRights Note:"
+msgstr "متن کپی‌رایت:"
+
+#: index.php:28
+msgid "Next Entries"
+msgstr "نوشته‌های جدیدتر"
+
+#: index.php:28
+msgid "Previous Entries"
+msgstr "نوشته‌های قدیمی‌تر"
+
+#: index.php:31 page.php:25 single.php:29
+msgid "Not Found"
+msgstr "پیدا نشد"
+
+#~ msgid "Arash theme options"
+#~ msgstr "گزینه‌های قالب آرش"
+
+#~ msgid "Template Setting Page"
+#~ msgstr "برگهٔ تنظیمات قالب"
+
+#~ msgid "Template Setting Arash"
+#~ msgstr "تنظیمات قالب آرش"
+
+#~ msgid "Github profile URL"
+#~ msgstr "لینک حساب گیتهاب"
+
+#~ msgid "Facebook profile URL"
+#~ msgstr "لینک حساب فیسبوک"
+
+#~ msgid "Google Plus profile URL"
+#~ msgstr "لینک حساب گوگل پلاس"
+
+#~ msgid "Twitter profile URL"
+#~ msgstr "لینک حساب تویتر"
+
+#~ msgid "LinkedIn profile URL"
+#~ msgstr "لینک حساب لینکداین"
+
+#~ msgid "Telegram profile URL"
+#~ msgstr "لینک حساب تلگرام"
+
+#~ msgid "Instagram profile URL"
+#~ msgstr "لینک حساب اینستاگرام"
+
+#~ msgid "Copyright note"
+#~ msgstr "یادداشت کپی‌رایت"
+
+#~ msgid "Save settings"
+#~ msgstr "ذخیرهٔ تنظیمات"
+
+#~ msgid "Github profile link"
+#~ msgstr "لینک حساب گیتهاب"
+
+#~ msgid "Facebook profile link"
+#~ msgstr "لینک حساب فیسبوک"
+
+#~ msgid "Google Plus profile link"
+#~ msgstr "لینک حساب گوگل پلاس"
+
+#~ msgid "Twitter profile link"
+#~ msgstr "لینک حساب تویتر"
+
+#~ msgid "LinkedIn profile link"
+#~ msgstr "لینک حساب لینکداین"
+
+#~ msgid "Telegram profile link"
+#~ msgstr "لینک حساب تلگرام"
+
+#~ msgid "Instagram profile link"
+#~ msgstr "لینک حساب اینستاگرام"
+
+#~ msgid "Template Setting"
+#~ msgstr "تنظیمات قالب"
+
+#~ msgid "Setting Page"
+#~ msgstr "برگهٔ تنظیمات"

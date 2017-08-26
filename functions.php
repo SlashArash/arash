@@ -24,8 +24,8 @@ function sa_theme_setup(){
  */
 function sa_theme_menu() {
 	add_theme_page(
-        'Theme Option',
-        'Theme Options',
+		__('Theme Options', 'arash'),
+		__('Arash Theme Options', 'arash'),
         'manage_options',
         'sa_theme_options.php',
         'sa_theme_page'
@@ -40,7 +40,7 @@ function sa_theme_page()
 {
     ?>
     <div class="wrap">
-        <h1>Custom Theme Options</h1>
+        <h1><?php _e('Arash Theme Options', 'arash') ?></h1>
         <form method="post" action="options.php">
 		    <?php
 		    settings_fields("sa_theme_options");
@@ -49,7 +49,7 @@ function sa_theme_page()
 
             <?php submit_button(); ?>
         </form>
-        <p>Created by <a href="http://www.kadkhdoaei.ir">SlashArash</a>.</p>
+        <p><?php _e('Created by', 'arash') ?> <a href="http://kadkhodaei.ir/">SlashArash</a>.</p>
     </div>
     <?php
 }
@@ -63,7 +63,7 @@ function sa_register_settings() {
 
 
 	// Add settings section
-	add_settings_section( 'sa_text_section', 'Text box Title', null, 'sa_theme_options.php' );
+	add_settings_section( 'sa_text_section', __('Footer information', 'arash'), null, 'sa_theme_options.php' );
 	// Create textbox field
 	$facebook_args = array('type' => 'url','name' => 'facebook', 'option_name' => 'sa_social_urls');
 	$twitter_args = array('type' => 'url','name' => 'twitter', 'option_name' => 'sa_social_urls');
@@ -74,14 +74,14 @@ function sa_register_settings() {
 	$github_args = array('type' => 'url','name' => 'github', 'option_name' => 'sa_social_urls');
 	$copyrights_note = array('type' => 'textarea','name' => 'sa_copyrights', 'option_name' => 'sa_copyrights');
 
-	add_settings_field( 'facebook_url', 'Facebook Profile Url:', 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $facebook_args );
-	add_settings_field( 'twitter_url', 'Twitter Profile Url:', 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $twitter_args );
-	add_settings_field( 'gplus_url', 'Google Plus Profile Url:', 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $gplus_args );
-	add_settings_field( 'linkedin_url', 'LinkedIn Profile Url:', 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $linkedin_args );
-	add_settings_field( 'instagram_url', 'Instagram Profile Url:', 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $instagram_args );
-	add_settings_field( 'telegram_url', 'Telegram Profile Url:', 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $telegram_args );
-	add_settings_field( 'github_url', 'Github Profile Url:', 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $github_args );
-	add_settings_field( 'copyrights_note', 'CopyRights Note:', 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $copyrights_note );
+	add_settings_field( 'facebook_url', __('Facebook Profile Url:', 'arash'), 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $facebook_args );
+	add_settings_field( 'twitter_url', __('Twitter Profile Url:', 'arash'), 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $twitter_args );
+	add_settings_field( 'gplus_url', __('Google Plus Profile Url:', 'arash'), 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $gplus_args );
+	add_settings_field( 'linkedin_url', __('LinkedIn Profile Url:', 'arash'), 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $linkedin_args );
+	add_settings_field( 'instagram_url', __('Instagram Profile Url:', 'arash'), 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $instagram_args );
+	add_settings_field( 'telegram_url', __('Telegram Profile Url:', 'arash'), 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $telegram_args );
+	add_settings_field( 'github_url', __('Github Profile Url:', 'arash'), 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $github_args );
+	add_settings_field( 'copyrights_note', __('CopyRights Note:', 'arash'), 'sa_display_setting', 'sa_theme_options.php', 'sa_text_section', $copyrights_note );
 }
 /*
  * Function to display the settings on the page

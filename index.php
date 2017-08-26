@@ -25,10 +25,10 @@
 					</article>
 				<?php endwhile; ?>
                     <section class="paginate tc b mv4">
-                        <?php posts_nav_link( ' &#215; ', 'نوشته‌های جدیدتر', 'نوشته‌های قدیمی‌تر' ); ?>
+                        <?php posts_nav_link( ' &#215; ', __('Next Entries', 'arash'), __('Previous Entries', 'arash') ); ?>
                     </section>
 			<?php else : ?>
-				<h2><?php _e('پیدا نشد'); ?></h2>
+				<h2><?php _e('Not Found', 'arash'); ?></h2>
 			<?php endif ?>
 		</main>
 <?php get_footer() ?>
