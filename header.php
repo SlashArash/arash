@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="fa-ir" dir="rtl">
+<html <?php language_attributes(); ?>>
 	<head>
-		<title><?php if (is_home()) {bloginfo('name');}else{wp_title();} ?></title>
-		<meta charset="utf-8"/>
-		<meta content="آزش کدخدائی, وبلاگ آرش کدخدائی, نوشته‌های آرش کدخدائی, لینوکس, نرم افزار متن باز, فناوری, آزادی" name="keywords"/>
-		<meta name="author" content="<?php the_author_meta('display_name', 1);?>"/>
-		<meta name="viewport" content="width=device-width, initial-scale=0.9"/>
-		<link href="http://feeds.feedburner.com/kadkhodaei" title="نوشته‌های آرش کدخدائی" type="application/rss+xml" rel="alternate"/>
-		<link media="screen" type="text/css" href="<?php bloginfo('stylesheet_url')?>" rel="stylesheet"/>
-        <link rel="apple-touch-icon-precomposed" href="http://kadkhodaei.ir/icon.png"/>
-        <link rel="shortcut icon" href="http://kadkhodaei.ir/favicon.ico"/>
+		<meta charset="<?php bloginfo( 'charset' ); ?>" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
+        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+        <?php endif; ?>
 		<?php wp_head(); ?>
 	</head>
 	<body>

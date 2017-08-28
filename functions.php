@@ -1,22 +1,40 @@
 <?php
 // run my_theme_setup on after-setup-theme hook
 add_action( 'after_setup_theme', 'sa_theme_setup' );
-// add thumbnail support
-add_theme_support('post-thumbnails');
-// add navigation support
-register_nav_menu( 'primary', 'Primary Menu' );
+
 if ( is_admin() ){
     //
     add_action( 'admin_menu', 'sa_theme_menu' );
     // Register the settings to use on the theme options page
     add_action( 'admin_init', 'sa_register_settings' );
-}
 
-/*
- * load text domain for internationalization
- */
+}
 function sa_theme_setup(){
+	/*
+	 * Make theme available for translation.
+	 */
     load_theme_textdomain( 'arash', get_template_directory() . '/languages' );
+	/*
+	 * Let WordPress manage the document title.
+	 */
+	add_theme_support( 'title-tag' );
+
+	/*
+	 * Add RSS feed links to <head> for posts and comments.
+	 */
+	add_theme_support( 'automatic-feed-links' );
+	/*
+	 * Enable support for Post Thumbnails on posts and pages.
+	 */
+	add_theme_support( 'post-thumbnails' );
+	/*
+	 * This theme uses wp_nav_menu() in one location
+	 */
+	register_nav_menu( 'primary', 'Primary Menu' );
+	/*
+	 * Load our main stylesheet.
+	 */
+	wp_enqueue_style( 'arash-style', get_stylesheet_uri() );
 }
 
 /*
