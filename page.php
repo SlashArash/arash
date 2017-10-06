@@ -3,12 +3,10 @@
 			<?php if (have_posts() ) :
 				while (have_posts() ) : the_post(); ?>
 					<article class="pa4">
-						<h1 class="mh2 mb3">
-							<a class="link underline custom-gold hover-black-60 no-underline-hover" href="<?php the_permalink() ?>" title="<?php the_title() ?>">
-								<?php the_title() ?>
-							</a>
-						</h1>
-						<div class="meta mb3">
+                        <h1 class="mh2 mb3 custom-gold">
+							<?php the_title() ?>
+                        </h1>
+						<div class="meta mb3">asd
 							<date><?php the_time('j F Y'); ?></date>
 						</div>
                         <?php if ( has_post_thumbnail() ): ?>
