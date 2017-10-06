@@ -6,11 +6,12 @@
 						<h1 class="mh2 mb3 custom-gold">
                             <?php the_title() ?>
 						</h1>
-						<div class="meta mb3">
-							<date><?php the_time('j F Y'); ?></date>
-                                                        <span class="category"> - <?php the_category( '، ' ); ?></span>
-						</div>
-                    <?php if ( has_post_thumbnail() ): ?>
+                        <div class="meta mb3">
+                            <span><?php edit_post_link(__('Edit This'), '[', '] - '); ?></span>
+                            <date><?php the_time('j F Y'); ?></date>
+                            <span class="category"> - <?php the_category( '، ' ); ?></span>
+                        </div>
+                        <?php if ( has_post_thumbnail() ): ?>
                         <div class="thumb">
                             <?php the_post_thumbnail(); ?>
                         </div>
